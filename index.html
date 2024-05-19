@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dark Themed Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showTab('info')">Информация</a></li>
+                <li><a href="#" onclick="showTab('features')">Функционал</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="info" class="tab-content">
+            <h1>Информация о сайте</h1>
+            <p>Этот сайт создан для демонстрации темного современного дизайна с закругленными углами.</p>
+            <p>Автор: Влад</p>
+        </section>
+        <section id="features" class="tab-content" style="display: none;">
+            <h1>Функционал</h1>
+            <div id="timer">
+                <h2>Таймер</h2>
+                <input type="text" id="timer-input" placeholder="ЧЧ:ММ:СС" />
+                <p id="timer-display">00:00:00</p>
+                <button onclick="startTimer()">Старт</button>
+                <button onclick="stopTimer()">Стоп</button>
+                <button onclick="resetTimer()">Сброс</button>
+            </div>
+            <div id="stopwatch">
+                <h2>Секундомер</h2>
+                <p id="stopwatch-display">00:00:00:000</p>
+                <button onclick="startStopwatch()">Старт</button>
+                <button onclick="stopStopwatch()">Стоп</button>
+                <button onclick="resetStopwatch()">Сброс</button>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
